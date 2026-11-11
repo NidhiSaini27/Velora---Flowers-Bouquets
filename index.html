@@ -9,8 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -35,7 +34,7 @@
   <div class="hero">
     <div class="petals" id="petals" aria-hidden="true"></div>
     <h1 id="heroTitle">Build your own <em>bouquet</em>, stem by stem</h1>
-    <p>Now in real 3D — turn the bouquet around and see it from every side. <strong>Drag real flowers straight into your bouquet</strong> and arrange every stem yourself on the dome, then pick the wrap and bow and watch the bill add up live.</p>
+    <p>A hands-on studio with real photos: <strong>drag flowers straight into your bouquet</strong> and arrange every stem yourself on the dome, then pick the wrap and bow and watch the bill add up live.</p>
     <div class="perks">
       <div class="perk"><span class="dot"></span> Cut fresh every morning</div>
       <div class="perk"><span class="dot"></span> Free delivery over ₹999</div>
@@ -104,7 +103,19 @@
       <div class="studio-card reveal" id="studioCard">
         <h2>Your bouquet — <span class="bname" id="previewName">Untitled</span></h2>
         <div class="stage" id="stage" aria-label="Bouquet arranging studio. Drag flowers here and move them around to arrange your bouquet.">
-          <div id="gl3d"></div>
+          <div class="bq" id="bqGroup" aria-hidden="true">
+            <div class="sheet s1"><div class="wtex"></div><div class="wtint"></div></div>
+            <div class="sheet s2"><div class="wtex"></div><div class="wtint"></div></div>
+            <div class="sheet s3"><div class="wtex"></div><div class="wtint"></div></div>
+            <div class="sheet s4"><div class="wtex"></div><div class="wtint"></div></div>
+            <div class="sheet s5"><div class="wtex"></div><div class="wtint"></div></div>
+            <img class="greenery g1" src="assets/img-01.png" alt="" style="display:none">
+            <img class="greenery g2" src="assets/img-01.png" alt="" style="display:none">
+            <div id="piecesLayer"></div>
+            <div class="wrap-front"><div class="wtex"></div><div class="wtint"></div><div class="wfold"></div><div class="wsheen"></div><div class="wglitter"></div></div>
+            <div class="twine-tie" id="twineTie" style="display:none"></div>
+            <img class="stage-bow" id="stageBow" src="assets/img-02.png" alt="">
+          </div>
           <div class="stage-empty" id="stageEmpty">
             <span class="big">✿</span>
             <p>Your bouquet is empty.<br>Drag flowers in here — or tap + in Step 01 — and arrange them your way.</p>
@@ -115,15 +126,9 @@
         <p class="size-line" id="sizeLine"><strong>0 stems</strong> · pick flowers to begin</p>
         <div class="studio-tools">
           <button type="button" class="tool-btn" id="autoArrange">↺ Auto-arrange</button>
-          <button type="button" class="tool-btn" id="spinBtn" aria-pressed="false">⟳ Spin 360°</button>
           <button type="button" class="tool-btn" id="clearBtn">Clear bouquet</button>
         </div>
-        <div class="spin-row">
-          <label for="spinRange">360° view</label>
-          <input type="range" id="spinRange" min="0" max="360" step="1" value="0" aria-label="Rotate the bouquet to view it from any angle">
-          <span class="spin-deg" id="spinDeg">0°</span>
-        </div>
-        <p class="studio-hint">Drag stems over the dome to arrange them — they always stay inside the bouquet · drag the bouquet itself, use the slider, or hit Spin to turn it in real 3D · tap a stem then its ×, or drag it to the bin, to remove it</p>
+        <p class="studio-hint">Drag stems over the dome to arrange them — they always stay inside the bouquet, with every stem tucked into the wrap · tap a stem then its ×, or drag it to the bin, to remove it</p>
       </div>
 
       <div class="bill reveal" id="billCard">
@@ -254,8 +259,6 @@
   </div>
 </div>
 
-<script src="three.min.js"></script>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

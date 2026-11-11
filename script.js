@@ -1,39 +1,39 @@
 /* ================= DATA ================= */
 var FLOWERS = [
-  {id:'red-rose',   name:'Red Rose',     desc:'Classic romance, deep red petals', price:49,  img:'assets/img-01.png',   pw:27},
-  {id:'pink-rose',  name:'Pink Rose',    desc:'Soft blush, sweet & gentle',      price:49,  img:'assets/img-02.png',  pw:25},
-  {id:'white-rose', name:'White Rose',   desc:'Pure ivory, calm & elegant',      price:45,  img:'assets/img-03.png', pw:33},
-  {id:'sunflower',  name:'Sunflower',    desc:'Big, bright & impossible to miss',price:79,  img:'assets/img-04.png',  pw:34},
-  {id:'lily',       name:'White Lily',   desc:'Fragrant, graceful long stems',   price:99,  img:'assets/img-05.png',       pw:36},
-  {id:'orchid',     name:'Orchid',       desc:'Exotic purple, lasts for weeks',  price:129, img:'assets/img-06.png',     pw:33},
-  {id:'tulip',      name:'Tulip',        desc:'Cheerful spring favourite',       price:89,  img:'assets/img-07.png',      pw:24},
-  {id:'gerbera',    name:'Gerbera Daisy',desc:'Happy pops of coral orange',      price:39,  img:'assets/img-08.png',    pw:30},
-  {id:'carnation',  name:'Carnation',    desc:'Ruffled, long-lasting & sweet',   price:35,  img:'assets/img-09.png',  pw:26},
-  {id:'hydrangea',  name:'Hydrangea',    desc:'Cloud-soft blue clusters',        price:119, img:'assets/img-10.png',  pw:36},
-  {id:'lavender',   name:'Lavender',     desc:'Fragrant purple sprigs',          price:59,  img:'assets/img-11.png',   pw:20},
-  {id:'babysbreath',name:"Baby's Breath",desc:'Airy white filler, sold per bunch',price:29, img:'assets/img-12.png',pw:32}
+  {id:'red-rose',   name:'Red Rose',     desc:'Classic romance, deep red petals', price:49,  img:'assets/img-03.png',   pw:27},
+  {id:'pink-rose',  name:'Pink Rose',    desc:'Soft blush, sweet & gentle',      price:49,  img:'assets/img-04.png',  pw:25},
+  {id:'white-rose', name:'White Rose',   desc:'Pure ivory, calm & elegant',      price:45,  img:'assets/img-05.png', pw:33},
+  {id:'sunflower',  name:'Sunflower',    desc:'Big, bright & impossible to miss',price:79,  img:'assets/img-06.png',  pw:34},
+  {id:'lily',       name:'White Lily',   desc:'Fragrant, graceful long stems',   price:99,  img:'assets/img-07.png',       pw:36},
+  {id:'orchid',     name:'Orchid',       desc:'Exotic purple, lasts for weeks',  price:129, img:'assets/img-08.png',     pw:33},
+  {id:'tulip',      name:'Tulip',        desc:'Cheerful spring favourite',       price:89,  img:'assets/img-09.png',      pw:24},
+  {id:'gerbera',    name:'Gerbera Daisy',desc:'Happy pops of coral orange',      price:39,  img:'assets/img-10.png',    pw:30},
+  {id:'carnation',  name:'Carnation',    desc:'Ruffled, long-lasting & sweet',   price:35,  img:'assets/img-11.png',  pw:26},
+  {id:'hydrangea',  name:'Hydrangea',    desc:'Cloud-soft blue clusters',        price:119, img:'assets/img-12.png',  pw:36},
+  {id:'lavender',   name:'Lavender',     desc:'Fragrant purple sprigs',          price:59,  img:'assets/img-13.png',   pw:20},
+  {id:'babysbreath',name:"Baby's Breath",desc:'Airy white filler, sold per bunch',price:29, img:'assets/img-14.png',pw:32}
 ];
 var WRAPS = [
-  {id:'kraft',   name:'Classic Kraft',    desc:'Rustic brown, eco-friendly', price:49,  c1:'#C8A87E', c2:'#A9855A', tex:'assets/img-13.jpg'},
-  {id:'jute',    name:'Jute Burlap',      desc:'Natural woven hessian, wrapped all around', price:69, c1:'#D9BC8C', c2:'#B28D55', tex:'assets/img-14.jpg'},
-  {id:'blush',   name:'Blush Pink Matte', desc:'Soft pink, most loved',      price:79,  c1:'#F2C4CE', c2:'#DE9AAB', tex:'assets/img-15.jpg'},
-  {id:'ivory',   name:'Ivory Silk',       desc:'Wedding-white sheen',        price:99,  c1:'#F5EFE0', c2:'#E0D3B4', tex:'assets/img-16.jpg'},
-  {id:'sage',    name:'Sage Green',       desc:'Earthy & modern',            price:79,  c1:'#A9BC9B', c2:'#7E9570', tex:'assets/img-17.jpg'},
-  {id:'midnight',name:'Midnight Black',   desc:'Bold contrast for bright blooms', price:99, c1:'#3A3A3E', c2:'#232326', tex:'assets/img-18.jpg'},
-  {id:'lilac',   name:'Lavender Lilac',   desc:'Dreamy pastel purple',       price:79,  c1:'#CDBCE8', c2:'#A68FD0', tex:'assets/img-19.jpg'},
-  {id:'gold',    name:'Gold Foil Luxe',   desc:'Shimmering premium finish',  price:149, c1:'#E5C56B', c2:'#C39A35', tex:'assets/img-20.jpg'}
+  {id:'kraft',   name:'Classic Kraft',    desc:'Rustic brown, eco-friendly', price:49,  c1:'#C8A87E', c2:'#A9855A', tex:'assets/img-15.jpg'},
+  {id:'jute',    name:'Jute Burlap',      desc:'Natural woven hessian, wrapped all around', price:69, c1:'#D9BC8C', c2:'#B28D55', tex:'assets/img-16.jpg'},
+  {id:'blush',   name:'Blush Pink Matte', desc:'Soft pink, most loved',      price:79,  c1:'#F2C4CE', c2:'#DE9AAB', tex:'assets/img-17.jpg'},
+  {id:'ivory',   name:'Ivory Silk',       desc:'Wedding-white sheen',        price:99,  c1:'#F5EFE0', c2:'#E0D3B4', tex:'assets/img-18.jpg'},
+  {id:'sage',    name:'Sage Green',       desc:'Earthy & modern',            price:79,  c1:'#A9BC9B', c2:'#7E9570', tex:'assets/img-19.jpg'},
+  {id:'midnight',name:'Midnight Black',   desc:'Bold contrast for bright blooms', price:99, c1:'#3A3A3E', c2:'#232326', tex:'assets/img-20.jpg'},
+  {id:'lilac',   name:'Lavender Lilac',   desc:'Dreamy pastel purple',       price:79,  c1:'#CDBCE8', c2:'#A68FD0', tex:'assets/img-21.jpg'},
+  {id:'gold',    name:'Gold Foil Luxe',   desc:'Shimmering premium finish',  price:149, c1:'#E5C56B', c2:'#C39A35', tex:'assets/img-22.jpg'}
 ];
 /* ky = where the bow's knot sits in its photo (fraction of photo height),
    ar = photo aspect (height / width). Together they let the stage anchor every
    bow's knot on exactly the same point of the wrap, whatever the photo shape. */
 var BOWS = [
   {id:'none',    name:'No Bow',        desc:'Clean, minimal twine tie',    price:0,   color:null,      img:null,                   sw:0,  ky:0,    ar:1},
-  {id:'satin',   name:'Satin Ribbon',  desc:'Classic glossy bow',          price:39,  color:'#C0392B', img:'assets/img-21.png',   sw:40, ky:.47,  ar:.75},
-  {id:'organza', name:'Sheer Organza', desc:'Light, floaty & soft',        price:49,  color:'#F2A9BC', img:'assets/img-22.png', sw:32, ky:.28,  ar:1},
-  {id:'velvet',  name:'Velvet Bow',    desc:'Rich, plush & festive',       price:79,  color:'#5E2750', img:'assets/img-23.png',  sw:25, ky:.105, ar:1.51},
-  {id:'gingham', name:'Gingham Bow',   desc:'Red-and-white picnic check',  price:59,  color:'#C23B3B', img:'assets/img-24.png', sw:34, ky:.38,  ar:.60},
-  {id:'lace',    name:'Lace Bow',      desc:'Ivory lace, vintage romance', price:89,  color:'#E9DFC8', img:'assets/img-25.png',    sw:30, ky:.30,  ar:1.20},
-  {id:'polka',   name:'Polka Dot Bow', desc:'Playful black grosgrain dots',price:49,  color:'#2B2B2E', img:'assets/img-26.png',   sw:33, ky:.20,  ar:.58}
+  {id:'satin',   name:'Satin Ribbon',  desc:'Classic glossy bow',          price:39,  color:'#C0392B', img:'assets/img-02.png',   sw:40, ky:.47,  ar:.75},
+  {id:'organza', name:'Sheer Organza', desc:'Light, floaty & soft',        price:49,  color:'#F2A9BC', img:'assets/img-23.png', sw:32, ky:.28,  ar:1},
+  {id:'velvet',  name:'Velvet Bow',    desc:'Rich, plush & festive',       price:79,  color:'#5E2750', img:'assets/img-24.png',  sw:25, ky:.105, ar:1.51},
+  {id:'gingham', name:'Gingham Bow',   desc:'Red-and-white picnic check',  price:59,  color:'#C23B3B', img:'assets/img-25.png', sw:34, ky:.38,  ar:.60},
+  {id:'lace',    name:'Lace Bow',      desc:'Ivory lace, vintage romance', price:89,  color:'#E9DFC8', img:'assets/img-26.png',    sw:30, ky:.30,  ar:1.20},
+  {id:'polka',   name:'Polka Dot Bow', desc:'Playful black grosgrain dots',price:49,  color:'#2B2B2E', img:'assets/img-27.png',   sw:33, ky:.20,  ar:.58}
 ];
 var EXTRAS = [
   {id:'card',  name:'Handwritten greeting card', desc:'Your words, written by hand on a kraft card', price:49},
@@ -103,8 +103,8 @@ var FREE_SHIP = 999, SHIP_FEE = 79, MIN_STEMS = 3, MAX_PIECES = 24;
    knot (and the plain twine tie) is anchored to that one point */
 var BOW_NECK = 67.5, STAGE_AR = 1.14; /* stage aspect-ratio is 10 / 11.4 */
 /* head crops: [x0, y0, x1, y1] — the part of each flower photo that is the
-   bloom itself. The long bare stem in the photo is dropped; a real 3D stem
-   replaces it and runs down inside the wrap. */
+   bloom itself. The long bare stem in the photo is dropped — the stem
+   stays tucked inside the wrap, so only the bloom ever shows. */
 var HEAD = {
   'red-rose':[0,0,.60,.26], 'pink-rose':[.02,.01,.80,.22], 'white-rose':[.03,0,.97,.66],
   'sunflower':[.22,.02,.80,.32], 'lily':[.04,.12,.98,.82], 'orchid':[.10,.18,.92,.84],
@@ -115,18 +115,25 @@ var IMG_SIZE = { 'red-rose':[232,609], 'pink-rose':[207,622], 'white-rose':[554,
   'sunflower':[409,583], 'lily':[800,800], 'orchid':[800,800], 'tulip':[439,700],
   'gerbera':[700,700], 'carnation':[700,700], 'hydrangea':[800,620], 'lavender':[800,457],
   'babysbreath':[579,700] };
-/* the arrangement dome: heads sit on a shallow dome whose rim (rho = 1) is
-   the mouth of the wrap — nothing is ever placed beyond it */
-function domeY(rho){ return 1.80 - .58*rho*rho; }
-/* dome slots, centre-out: [rho, azimuth°, scale] — focal blooms take the
-   middle, rings step down and out, front stems lower and larger */
+/* the arrangement dome in 2D: head centres live on a shallow dome whose
+   rim is the mouth of the wrap — slots and drags are clamped to that
+   ellipse, so a flower can only ever end up inside the bouquet area */
+var DOME_CX = 50, DOME_CY = 20, DOME_RX = 35, DOME_RY = 12.5;
+/* dome slots, centre-out: [x% , y% , scale] — focal blooms take the
+   middle, rings step down and out toward the wrap's rim */
 var DOME_SLOTS = [
-  [0,0,.85],
-  [.38,18,.92],[.38,90,.92],[.38,162,.92],[.38,234,.92],[.38,306,.92],
-  [.68,0,1],[.68,51,1],[.68,103,1],[.68,154,1],[.68,206,1],[.68,257,1],[.68,309,1],
-  [.92,10,1.03],[.92,50,1.03],[.92,90,1.03],[.92,130,1.03],[.92,170,1.03],[.92,210,1.03],[.92,250,1.03],[.92,290,1.03],[.92,330,1.03],
-  [.99,100,1],[.99,280,1]
+  [50,17,.95],
+  [39,13,.92],[61,13,.92],[50,9,.88],
+  [30,17,.95],[70,17,.95],[42,21,1],[58,21,1],
+  [22,24,1],[78,24,1],[35,26,1.03],[65,26,1.03],[50,25,1.02],
+  [16,29,1],[84,29,1],[28,31,1.02],[72,31,1.02],[44,31,1.03],[56,31,1.03],
+  [33,10,.9],[67,10,.9],[24,12,.9],[76,12,.9],[50,30,1]
 ];
+function clampDome(x, y){
+  var dx = (x - DOME_CX) / DOME_RX, dy = (y - DOME_CY) / DOME_RY, l = Math.hypot(dx, dy);
+  if(l > 1){ x = DOME_CX + dx / l * DOME_RX; y = DOME_CY + dy / l * DOME_RY; }
+  return { x: clamp(x, 8, 92), y: clamp(y, 5, 36) };
+}
 
 var REDUCED = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -206,279 +213,95 @@ function buildFinishControls(){
     return '<button type="button" class="fpill" data-bfinish="'+f.id+'">'+f.name+'</button>';
   }).join('');
 }
-/* ================= PIECES + TRUE-3D SCENE (three.js) =================
-   The bouquet is real geometry now, not flat layers: a lathe-turned wrap
-   cone with a round cross-section (so it keeps its volume from the side,
-   the back, everywhere), modelled flower heads — the real photos on
-   crossed planes so a head has depth from every angle — on true 3D stems
-   that run down inside the cone, and a modelled 3D bow tied at the neck.
-   Every head lives on a dome that sits strictly inside the wrap's mouth:
-   auto-arrange, palette drops and stem drags are all clamped to that dome,
-   so a flower can only ever end up inside the bouquet area. */
-var T = { ok:false, scene:null, camera:null, renderer:null, spin:null, piecesGroup:null,
-  wrapMesh:null, wrapMat:null, glitterPts:null, bowGroup:null, bowMats:[], bowGlitter:null,
-  twineGroup:null, greenGroup:null, proxies:[], heads:{}, camY:.55, bowBorn:0, lastTs:0 };
+/* ================= PIECES + 2D STAGE =================
+   The bouquet is layered 2D artwork, front view only: real flower-head
+   photos (cropped from the full stem photos, so no bare stem ever shows —
+   every stem stays tucked inside the wrap) clustered on a dome, over
+   fanned wrap sheets and under the front wrap cone, with the bow photo
+   tied at the gathered neck. Auto-arrange, palette drops and stem drags
+   are all clamped to the dome, so a flower can only ever end up inside
+   the bouquet area. */
 var selectedUid = null;
-var planeGeoUnit = null, stemGeoUnit = null, proxyGeoUnit = null, stemMat = null, proxyMat = null;
-var WRAP_PROFILE = [[0.0,-1.62],[0.10,-1.60],[0.17,-1.42],[0.20,-1.05],[0.225,-0.62],[0.26,-0.28],[0.34,0.08],[0.47,0.42],[0.64,0.72],[0.83,0.97],[1.00,1.14],[1.09,1.26],[1.13,1.36]];
 
-function piecePos(p){
-  var a = p.azim * Math.PI/180;
-  return { x: p.rho*Math.cos(a), y: domeY(p.rho)+p.lift, z: p.rho*Math.sin(a) };
-}
 function slotFor(i){ return DOME_SLOTS[i % DOME_SLOTS.length]; }
-function addPiece(fid, rho, azim){
+function addPiece(fid, pos){
   if(pieces.length >= MAX_PIECES) return null;
   var s = slotFor(pieces.length);
-  var p = { uid: uidSeq++, fid: fid,
-    rho: (rho==null ? s[0] : rho), azim: (azim==null ? s[1] : azim),
-    lift: -0.04, rot: ((pieces.length*47)%36)-18, s: s[2], born: Date.now() };
+  var xy = pos ? clampDome(pos.x, pos.y) : { x: s[0], y: s[1] };
+  var p = { uid: uidSeq++, fid: fid, x: xy.x, y: xy.y,
+    rot: ((pieces.length * 47) % 36) - 18, s: pos ? 1 : s[2], born: Date.now() };
   pieces.push(p); return p;
 }
-/* florist's dome: focal blooms take the centre slots, fillers drift to the
-   rim — every slot is on the dome, inside the bouquet area */
+/* florist's dome: focal blooms take the centre slots, fillers drift to
+   the rim — every slot is on the dome, inside the bouquet area */
 function arrangeAll(){
   var order = pieces.slice().sort(function(a, b){ return roleOf(a.fid) - roleOf(b.fid); });
   order.forEach(function(p, i){
-    var s = slotFor(i); p.rho = s[0]; p.azim = s[1]; p.s = s[2]; p.lift = -0.04;
+    var s = slotFor(i); p.x = s[0]; p.y = s[1]; p.s = s[2];
   });
 }
 function removePieceByUid(uid){
-  for(var i=0;i<pieces.length;i++) if(pieces[i].uid===uid){ pieces.splice(i,1); return; }
+  for(var i = 0; i < pieces.length; i++) if(pieces[i].uid === uid){ pieces.splice(i, 1); return; }
 }
 function removeLastPieceOf(fid){
-  for(var i=pieces.length-1;i>=0;i--) if(pieces[i].fid===fid){ pieces.splice(i,1); return; }
+  for(var i = pieces.length - 1; i >= 0; i--) if(pieces[i].fid === fid){ pieces.splice(i, 1); return; }
 }
 
-/* ---------- textures ---------- */
-var flowerTexCache = {};
-function flowerTexture(f){
-  if(flowerTexCache[f.id]) return flowerTexCache[f.id];
-  var tex = new THREE.TextureLoader().load(f.img);
-  tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 4;
-  var c = HEAD[f.id];
-  tex.repeat.set(c[2]-c[0], c[3]-c[1]);
-  tex.offset.set(c[0], 1-c[3]);
-  flowerTexCache[f.id] = tex; return tex;
-}
+/* ---------- flower heads (2D crops of the real photos) ---------- */
 function headAspect(f){
   var c = HEAD[f.id], img = IMG_SIZE[f.id];
-  return (img[0]*(c[2]-c[0])) / (img[1]*(c[3]-c[1]));
+  return (img[0] * (c[2] - c[0])) / (img[1] * (c[3] - c[1]));
 }
-var _dotTex = null;
-function dotTexture(){
-  if(_dotTex) return _dotTex;
-  var c = document.createElement('canvas'); c.width = c.height = 64;
-  var x = c.getContext('2d');
-  var gr = x.createRadialGradient(32,32,2,32,32,30);
-  gr.addColorStop(0,'rgba(255,255,255,1)'); gr.addColorStop(.4,'rgba(255,255,255,.8)'); gr.addColorStop(1,'rgba(255,255,255,0)');
-  x.fillStyle = gr; x.fillRect(0,0,64,64);
-  _dotTex = new THREE.CanvasTexture(c); return _dotTex;
+function headBox(f, s){
+  var c = HEAD[f.id], cw = c[2] - c[0], ch = c[3] - c[1];
+  return {
+    w: f.pw * 1.02 * (s || 1),
+    ar: headAspect(f),
+    bs: (100 / cw) + '% ' + (100 / ch) + '%',
+    bp: (cw >= 1 ? 50 : c[0] / (1 - cw) * 100) + '% ' + (ch >= 1 ? 50 : c[1] / (1 - ch) * 100) + '%'
+  };
 }
-
-/* ---------- scene construction ---------- */
-function buildWrapMesh(){
-  var pts = WRAP_PROFILE.map(function(p){ return new THREE.Vector2(p[0], p[1]); });
-  var geo = new THREE.LatheGeometry(pts, 96);
-  /* a gentle 5-lobe fold near the rim, like real folded paper sheets */
-  var posA = geo.attributes.position;
-  for(var i=0;i<posA.count;i++){
-    var x = posA.getX(i), y = posA.getY(i), z = posA.getZ(i);
-    if(y > .85){
-      var th = Math.atan2(z, x), k = Math.min(1, (y-.85)/.5);
-      var s = 1 + .05*Math.sin(th*5 + .6)*k;
-      posA.setX(i, x*s); posA.setZ(i, z*s);
-    }
-  }
-  geo.computeVertexNormals();
-  T.wrapMat = new THREE.MeshPhysicalMaterial({ side:THREE.DoubleSide, roughness:.9 });
-  T.wrapMesh = new THREE.Mesh(geo, T.wrapMat);
-  T.spin.add(T.wrapMesh);
-  var trim = new THREE.Mesh(
-    new THREE.TorusGeometry(1.09, .02, 8, 72),
-    new THREE.MeshStandardMaterial({ color:0xC9962E, roughness:.35, metalness:.8 }));
-  trim.rotation.x = Math.PI/2; trim.position.y = 1.33;
-  T.spin.add(trim);
-}
-function buildTwine(){
-  var g = new THREE.Group();
-  var mat = new THREE.MeshStandardMaterial({ color:0xA8874F, roughness:1 });
-  for(var i=0;i<3;i++){
-    var t = new THREE.Mesh(new THREE.TorusGeometry(.238, .026, 8, 40), mat);
-    t.rotation.x = Math.PI/2; t.position.y = -.55 + i*.045; g.add(t);
-  }
-  g.visible = false; T.twineGroup = g; T.spin.add(g);
-}
-function buildBowMesh(){
-  var g = new THREE.Group();
-  var mat = new THREE.MeshPhysicalMaterial({ color:0xC0392B, roughness:.48, side:THREE.DoubleSide });
-  T.bowMats = [mat];
-  function loop(side){
-    var m = new THREE.Mesh(new THREE.TorusGeometry(.155, .06, 12, 28), mat);
-    m.scale.set(1.3, .78, .6);
-    m.position.set(.17*side, .03, 0);
-    m.rotation.set(0, .35*side, -.5*side);
-    return m;
-  }
-  function tail(side){
-    var geo = new THREE.PlaneGeometry(.17, .5, 1, 8);
-    var pa = geo.attributes.position;
-    for(var i=0;i<pa.count;i++){
-      var y = pa.getY(i), ny = (y+.25)/.5;
-      pa.setZ(i, Math.sin((1-ny)*1.9)*.07);
-      pa.setX(i, pa.getX(i) * (.7+.3*ny));
-    }
-    geo.computeVertexNormals();
-    var m = new THREE.Mesh(geo, mat);
-    m.position.set(.095*side, -.31, .01);
-    m.rotation.set(-.1, 0, .17*side);
-    return m;
-  }
-  var knot = new THREE.Mesh(new THREE.SphereGeometry(.088, 20, 14), mat);
-  knot.scale.set(1.25, .8, .78);
-  g.add(loop(-1)); g.add(loop(1)); g.add(tail(-1)); g.add(tail(1)); g.add(knot);
-  var pts = [];
-  for(var i=0;i<42;i++) pts.push((Math.random()-.5)*.85, -.5+Math.random()*.72, .08+Math.random()*.1);
-  var pg = new THREE.BufferGeometry();
-  pg.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
-  T.bowGlitter = new THREE.Points(pg, new THREE.PointsMaterial({ size:.03, map:dotTexture(), transparent:true, depthWrite:false, blending:THREE.AdditiveBlending, color:0xFFE9A8, opacity:.9 }));
-  T.bowGlitter.visible = false;
-  g.add(T.bowGlitter);
-  g.position.set(0, -.48, .245);
-  T.bowGroup = g; T.spin.add(g);
-}
-function buildGreenery(){
-  var tex = new THREE.TextureLoader().load('assets/img-27.png');
-  tex.colorSpace = THREE.SRGBColorSpace;
-  var g = new THREE.Group();
-  var spots = [ [0.95, 205], [0.95, 335], [1.0, 270] ];
-  spots.forEach(function(s){
-    var a = s[1]*Math.PI/180, holder = new THREE.Group();
-    for(var k=0;k<2;k++){
-      var m = new THREE.Mesh(planeGeoUnit, new THREE.MeshBasicMaterial({ map:tex, alphaTest:.35, side:THREE.DoubleSide, color: k ? 0xE2E2E2 : 0xFFFFFF }));
-      m.scale.set(.62, .94, 1); m.rotation.y = k*Math.PI/2.3;
-      holder.add(m);
-    }
-    holder.position.set(Math.cos(a)*s[0]*.92, domeY(s[0])+.30, Math.sin(a)*s[0]*.92);
-    holder.rotation.z = Math.cos(a)*.5; holder.rotation.x = -Math.sin(a)*.5;
-    g.add(holder);
-  });
-  g.visible = false; T.greenGroup = g; T.spin.add(g);
-}
-function buildWrapGlitter(){
-  var pts = [];
-  for(var i=0;i<170;i++){
-    var seg = Math.floor(Math.random()*(WRAP_PROFILE.length-1)), fr = Math.random();
-    var r = WRAP_PROFILE[seg][0] + (WRAP_PROFILE[seg+1][0]-WRAP_PROFILE[seg][0])*fr;
-    var y = WRAP_PROFILE[seg][1] + (WRAP_PROFILE[seg+1][1]-WRAP_PROFILE[seg][1])*fr;
-    var th = Math.random()*Math.PI*2;
-    pts.push(Math.cos(th)*r*1.012, y, Math.sin(th)*r*1.012);
-  }
-  var pg = new THREE.BufferGeometry();
-  pg.setAttribute('position', new THREE.Float32BufferAttribute(pts, 3));
-  T.glitterPts = new THREE.Points(pg, new THREE.PointsMaterial({ size:.032, map:dotTexture(), transparent:true, depthWrite:false, blending:THREE.AdditiveBlending, color:0xFFE9A8, opacity:.85 }));
-  T.glitterPts.visible = false;
-  T.spin.add(T.glitterPts);
-}
-
-/* ---------- flower heads ---------- */
-function makeHead(p){
-  var f = flowerById(p.fid);
-  var g = new THREE.Group();
-  var tex = flowerTexture(f);
-  var w = f.pw/100*2.05*p.s, h = w/headAspect(f);
-  var planes = new THREE.Group();
-  var tints = [0xFFFFFF, 0xEDEDED, 0xDBDBDB];
-  for(var k=0;k<3;k++){
-    var m = new THREE.Mesh(planeGeoUnit, new THREE.MeshBasicMaterial({ map:tex, alphaTest:.35, side:THREE.DoubleSide, color:tints[k] }));
-    m.scale.set(w, h, 1); m.rotation.y = k*Math.PI/3;
-    planes.add(m);
-  }
-  g.add(planes);
-  var stem = new THREE.Mesh(stemGeoUnit, stemMat);
-  var proxy = new THREE.Mesh(proxyGeoUnit, proxyMat);
-  proxy.scale.setScalar(Math.max(w, h)*.62);
-  proxy.userData.uid = p.uid;
-  T.piecesGroup.add(g); T.piecesGroup.add(stem); T.piecesGroup.add(proxy);
-  T.heads[p.uid] = { group:g, planes:planes, stem:stem, proxy:proxy, w:w, h:h, baseQuat:null, dir:new THREE.Vector3(0,1,0) };
-  updatePieceTransform(p);
-  return T.heads[p.uid];
-}
-function updatePieceTransform(p){
-  var rec = T.heads[p.uid]; if(!rec) return;
-  var pos = piecePos(p);
-  rec.group.position.set(pos.x, pos.y, pos.z);
-  var tilt = Math.min(.62, p.rho*.62), dir;
-  if(pos.x*pos.x + pos.z*pos.z > .0001){
-    var rl = Math.hypot(pos.x, pos.z);
-    dir = new THREE.Vector3(pos.x/rl*Math.sin(tilt), Math.cos(tilt), pos.z/rl*Math.sin(tilt)).normalize();
-  } else dir = new THREE.Vector3(0, 1, 0);
-  var q = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,1,0), dir);
-  var roll = new THREE.Quaternion().setFromAxisAngle(dir, p.rot*Math.PI/180);
-  roll.multiply(q);
-  rec.baseQuat = roll; rec.dir = dir;
-  rec.group.quaternion.copy(roll);
-  /* the real stem: from the gather point inside the cone up to the head —
-     everything below the wrap's mouth is hidden inside the cone itself */
-  var base = new THREE.Vector3(pos.x, pos.y, pos.z).addScaledVector(dir, -rec.h*.40);
-  var from = new THREE.Vector3(0, -0.30, 0);
-  var delta = base.clone().sub(from), len = delta.length();
-  rec.stem.position.copy(from);
-  rec.stem.scale.set(1, len, 1);
-  rec.stem.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0), delta.normalize());
-  rec.proxy.position.set(pos.x, pos.y, pos.z);
+function pieceEl(p){ return document.querySelector('.piece[data-uid="' + p.uid + '"]'); }
+function layoutPiece(p){
+  var el = pieceEl(p); if(!el) return;
+  el.style.left = p.x + '%'; el.style.top = p.y + '%';
 }
 function renderPieces(popUid){
-  if(T.ok){
-    var seen = {};
-    pieces.forEach(function(p){
-      seen[p.uid] = 1;
-      if(!T.heads[p.uid]) makeHead(p);
-      if(p.uid===popUid) p.born = Date.now();
-      updatePieceTransform(p);
-    });
-    Object.keys(T.heads).forEach(function(uid){
-      if(!seen[uid]){
-        var rec = T.heads[uid];
-        T.piecesGroup.remove(rec.group); T.piecesGroup.remove(rec.stem); T.piecesGroup.remove(rec.proxy);
-        rec.planes.children.forEach(function(m){ m.material.dispose(); });
-        delete T.heads[uid];
-      }
-    });
-    T.proxies = Object.keys(T.heads).map(function(uid){ return T.heads[uid].proxy; });
-    if(selectedUid && !seen[selectedUid]) selectPiece(null);
-    if(T.greenGroup) T.greenGroup.visible = pieces.length > 0;
-  }
+  $('piecesLayer').innerHTML = pieces.map(function(p){
+    var f = flowerById(p.fid), hb = headBox(f, p.s);
+    return '<div class="piece' + (p.uid === popUid ? ' pop' : '') + (p.uid === selectedUid ? ' sel' : '') + '" data-uid="' + p.uid + '" data-fid="' + p.fid + '" role="button" aria-label="' + f.name + ' stem — drag to move it, tap its × to remove" style="left:' + p.x + '%;top:' + p.y + '%;width:' + hb.w + '%;aspect-ratio:' + hb.ar + ';background-image:url(' + f.img + ');background-size:' + hb.bs + ';background-position:' + hb.bp + ';transform:translate(-50%,-50%) rotate(' + p.rot + 'deg);z-index:' + Math.round(p.y) + '"></div>';
+  }).join('');
+  document.querySelectorAll('.greenery').forEach(function(g){ g.style.display = pieces.length ? 'block' : 'none'; });
   $('stageEmpty').style.display = pieces.length ? 'none' : 'flex';
+  positionChip();
 }
 function selectPiece(uid){
   selectedUid = uid;
-  if(!uid) $('pieceX').style.display = 'none';
+  pieces.forEach(function(p){
+    var el = pieceEl(p);
+    if(el) el.classList.toggle('sel', p.uid === uid);
+  });
+  positionChip();
 }
-function pieceScreen(p){
-  if(!T.ok) return null;
-  var pos = piecePos(p);
-  var v = new THREE.Vector3(pos.x, pos.y, pos.z);
-  T.spin.localToWorld(v); v.project(T.camera);
-  var r = stageRect();
-  return { x:(v.x*.5+.5)*r.width, y:(-v.y*.5+.5)*r.height,
-           xPct:(v.x*.5+.5)*100, yPct:(-v.y*.5+.5)*100, behind: v.z > 1 };
+function positionChip(){
+  var chip = $('pieceX'), sel = null;
+  if(selectedUid != null) pieces.forEach(function(p){ if(p.uid === selectedUid) sel = p; });
+  if(!sel){ chip.style.display = 'none'; return; }
+  chip.style.display = 'flex';
+  chip.style.left = sel.x + '%'; chip.style.top = sel.y + '%';
 }
 function rippleAt(xPct, yPct){
   if(REDUCED) return;
-  var r=document.createElement('div'); r.className='ripple';
-  r.style.left=xPct+'%'; r.style.top=yPct+'%';
+  var r = document.createElement('div'); r.className = 'ripple';
+  r.style.left = xPct + '%'; r.style.top = yPct + '%';
   $('stage').appendChild(r);
   setTimeout(function(){ r.remove(); }, 600);
 }
-function rippleAtPiece(p){
-  var s = pieceScreen(p);
-  if(s && !s.behind) rippleAt(s.xPct, s.yPct);
-}
+function rippleAtPiece(p){ rippleAt(p.x, Math.max(4, p.y - 6)); }
 function addStem(fid, domePos, sourceEl){
   if(state.qty[fid] >= 30) return;
   state.qty[fid]++;
-  var p = domePos ? addPiece(fid, domePos.rho, domePos.azim) : addPiece(fid);
+  var p = domePos ? addPiece(fid, domePos) : addPiece(fid);
   renderPieces(p ? p.uid : null);
   renderAll();
   popQty(fid);
@@ -499,209 +322,71 @@ function removePieceStem(uid, fid){
   renderPieces(null); renderAll(); popQty(fid);
 }
 function popQty(fid){
-  var q=$('qty-'+fid); if(!q) return;
+  var q = $('qty-' + fid); if(!q) return;
   q.classList.remove('pop'); void q.offsetWidth; q.classList.add('pop');
 }
 function flyToPiece(sourceEl, piece){
   if(REDUCED || !sourceEl) return;
-  var pt = pieceScreen(piece); if(!pt || pt.behind) return;
   var sRect = sourceEl.getBoundingClientRect(), stRect = stageRect();
   if(stRect.bottom < 0 || stRect.top > window.innerHeight) return;
-  var f = flowerById(piece.fid);
-  var tw = stRect.width * (f.pw*piece.s) / 100 * 1.5, th = tw / headAspect(f);
+  var f = flowerById(piece.fid), hb = headBox(f, piece.s);
+  var tw = stRect.width * hb.w / 100, th = tw / hb.ar;
   var clone = sourceEl.cloneNode();
-  clone.className='fly-clone';
-  clone.style.cssText='left:'+sRect.left+'px;top:'+sRect.top+'px;width:'+sRect.width+'px;height:'+sRect.height+'px;margin:0;object-fit:contain;filter:drop-shadow(0 10px 12px rgba(30,40,25,.3))';
+  clone.className = 'fly-clone';
+  clone.style.cssText = 'left:' + sRect.left + 'px;top:' + sRect.top + 'px;width:' + sRect.width + 'px;height:' + sRect.height + 'px;margin:0;object-fit:contain;filter:drop-shadow(0 10px 12px rgba(30,40,25,.3))';
   document.body.appendChild(clone);
   requestAnimationFrame(function(){ requestAnimationFrame(function(){
-    clone.style.left=(stRect.left+pt.x-tw/2)+'px'; clone.style.top=(stRect.top+pt.y-th/2)+'px';
-    clone.style.width=tw+'px'; clone.style.height=th+'px'; clone.style.opacity='.96';
+    clone.style.left = (stRect.left + piece.x / 100 * stRect.width - tw / 2) + 'px';
+    clone.style.top = (stRect.top + piece.y / 100 * stRect.height - th / 2) + 'px';
+    clone.style.width = tw + 'px'; clone.style.height = th + 'px'; clone.style.opacity = '.96';
   });});
-  setTimeout(function(){ clone.remove(); rippleAt(pt.xPct, pt.yPct); }, 580);
+  setTimeout(function(){ clone.remove(); rippleAtPiece(piece); }, 580);
 }
 
-/* ---------- init + render loop ---------- */
-function frame(ts){
-  requestAnimationFrame(frame);
-  if(!T.renderer) return;
-  var now = ts || 0;
-  if(spinning){
-    if(T.lastTs) spinAngle += (now - T.lastTs) * .05; /* one full 360° turn in about 7 seconds */
-    if(spinAngle >= spinStopAt){ spinAngle = spinStopAt; renderSpin(); stopSpin(); }
-    else renderSpin();
-  }
-  T.lastTs = now;
-  T.spin.rotation.y = spinAngle * Math.PI/180;
-  T.camera.position.y += (T.camY - T.camera.position.y) * .18;
-  T.camera.lookAt(0, .05, 0);
-  var t = now/1000;
-  pieces.forEach(function(p){
-    var rec = T.heads[p.uid]; if(!rec || !rec.baseQuat) return;
-    var age = (Date.now() - (p.born||0)) / 480, s = 1;
-    if(age < 1 && !REDUCED){
-      var c = 1.7, e = 1 + (c+1)*Math.pow(age-1,3) + c*Math.pow(age-1,2);
-      s = Math.max(.05, e);
-    }
-    rec.planes.scale.setScalar(s);
-    if(!REDUCED){
-      rec.group.quaternion.copy(rec.baseQuat);
-      rec.group.rotateX(Math.sin(t*.9 + p.uid*1.7)*.045);
-      rec.group.rotateZ(Math.cos(t*.7 + p.uid*2.3)*.035);
-    }
-  });
-  if(T.bowBorn){
-    var ba = (Date.now()-T.bowBorn)/480;
-    if(ba >= 1){ T.bowGroup.scale.setScalar(1); T.twineGroup.scale.setScalar(1); T.bowBorn = 0; }
-    else {
-      var c2 = 1.7, e2 = 1 + (c2+1)*Math.pow(ba-1,3) + c2*Math.pow(ba-1,2), bs = Math.max(.1, e2);
-      if(T.bowGroup.visible) T.bowGroup.scale.setScalar(bs);
-      if(T.twineGroup.visible) T.twineGroup.scale.setScalar(bs);
-    }
-  }
-  if(selectedUid){
-    var sel = null;
-    pieces.forEach(function(p){ if(p.uid===selectedUid) sel = p; });
-    var chip = $('pieceX');
-    if(sel){
-      var pt = pieceScreen(sel);
-      if(pt && !pt.behind){ chip.style.display='flex'; chip.style.left = pt.x+'px'; chip.style.top = pt.y+'px'; }
-      else chip.style.display = 'none';
-    }
-  }
-  T.renderer.render(T.scene, T.camera);
-}
-function init3D(){
-  if(!window.THREE) return;
-  try{
-    var holder = $('gl3d'), stage = $('stage');
-    var renderer = new THREE.WebGLRenderer({ antialias:true, alpha:true });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio||1, 2));
-    renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.1;
-    holder.appendChild(renderer.domElement);
-    var scene = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera(34, 1, .1, 100);
-    camera.position.set(0, .55, 7.6);
-    try{
-      var pmrem = new THREE.PMREMGenerator(renderer);
-      scene.environment = pmrem.fromScene(new THREE.RoomEnvironment(), .04).texture;
-    }catch(e){}
-    scene.add(new THREE.HemisphereLight(0xFFF6E6, 0x77684F, .85));
-    var key = new THREE.DirectionalLight(0xFFFFFF, 1.7); key.position.set(3.5, 5, 4.5); scene.add(key);
-    var rim = new THREE.DirectionalLight(0xFFE3C0, .6); rim.position.set(-4, 2.5, -3.5); scene.add(rim);
-    var spin = new THREE.Group(); scene.add(spin);
-    T.scene = scene; T.camera = camera; T.renderer = renderer; T.spin = spin;
-    planeGeoUnit = new THREE.PlaneGeometry(1, 1);
-    stemGeoUnit = new THREE.CylinderGeometry(.015, .024, 1, 7); stemGeoUnit.translate(0, .5, 0);
-    proxyGeoUnit = new THREE.SphereGeometry(1, 10, 8);
-    stemMat = new THREE.MeshStandardMaterial({ color:0x55703F, roughness:.9 });
-    proxyMat = new THREE.MeshBasicMaterial({ transparent:true, opacity:0, depthWrite:false, colorWrite:false });
-    T.piecesGroup = new THREE.Group(); spin.add(T.piecesGroup);
-    buildWrapMesh(); buildTwine(); buildBowMesh(); buildGreenery(); buildWrapGlitter();
-    _ray = new THREE.Raycaster(); _ndc = new THREE.Vector2();
-    function resize(){
-      var w = stage.clientWidth, h = stage.clientHeight;
-      if(!w || !h) return;
-      renderer.setSize(w, h);
-      camera.aspect = w/h; camera.updateProjectionMatrix();
-    }
-    resize();
-    if(window.ResizeObserver) new ResizeObserver(resize).observe(stage);
-    else window.addEventListener('resize', resize);
-    T.ok = true;
-    requestAnimationFrame(frame);
-  }catch(e){ T.ok = false; }
-}
-
-/* ================= STAGE FINISH (wrap + bow, in 3D) ================= */
-var wrapTexCache = {};
-function wrapTexture(w){
-  if(wrapTexCache[w.id]) return wrapTexCache[w.id];
-  var tex = new THREE.TextureLoader().load(w.tex);
-  tex.colorSpace = THREE.SRGBColorSpace;
-  tex.wrapS = THREE.RepeatWrapping; tex.wrapT = THREE.RepeatWrapping;
-  tex.repeat.set(3, 1); tex.anisotropy = 4;
-  wrapTexCache[w.id] = tex; return tex;
-}
-var bowTexCache = {};
-function bowPattern(kind, hex){
-  var key = kind + '|' + hex;
-  if(bowTexCache[key]) return bowTexCache[key];
-  var c = document.createElement('canvas'); c.width = c.height = 128;
-  var x = c.getContext('2d'), i;
-  if(kind === 'gingham'){
-    x.fillStyle = '#FFFFFF'; x.fillRect(0, 0, 128, 128);
-    x.fillStyle = hex; x.globalAlpha = .5;
-    for(i=0;i<4;i++){ x.fillRect(i*32, 0, 16, 128); x.fillRect(0, i*32, 128, 16); }
-  } else if(kind === 'polka'){
-    x.fillStyle = hex; x.fillRect(0, 0, 128, 128);
-    x.fillStyle = 'rgba(255,255,255,.92)';
-    for(var r=0;r<4;r++) for(var col=0;col<4;col++){
-      x.beginPath(); x.arc(col*32 + (r%2 ? 24 : 8), r*32 + 16, 5.5, 0, Math.PI*2); x.fill();
-    }
-  } else { /* lace: ivory with a soft dotted stitch pattern */
-    x.fillStyle = '#F3EAD8'; x.fillRect(0, 0, 128, 128);
-    x.fillStyle = 'rgba(178,155,110,.5)';
-    for(var r2=0;r2<8;r2++) for(var c2=0;c2<8;c2++){
-      x.beginPath(); x.arc(c2*16 + (r2%2 ? 12 : 4), r2*16 + 8, 2, 0, Math.PI*2); x.fill();
-    }
-  }
-  var tex = new THREE.CanvasTexture(c);
-  tex.colorSpace = THREE.SRGBColorSpace;
-  tex.wrapS = THREE.RepeatWrapping; tex.wrapT = THREE.RepeatWrapping;
-  tex.repeat.set(2, 2);
-  bowTexCache[key] = tex; return tex;
-}
+/* ================= STAGE FINISH (wrap + bow, in 2D) ================= */
 function renderStageFinish(popBow){
   var w = wrapById(state.wrap), b = bowById(state.bow);
   var wc = wrapColorById(state.wrapColor), wf = wrapFinishById(state.wrapFinish);
   var bc = bowColorById(state.bowColor), bf = bowFinishById(state.bowFinish);
   /* the picker cards keep their photo thumbnails, recoloured by the same filter */
   document.documentElement.style.setProperty('--bowf', ((bc.f || '') + (bf.f || '')).trim() || 'none');
-  if(T.ok){
-    /* wrap: real paper texture on the 3D cone, colour tint multiplied over
-       it, finish driving roughness / metalness / clearcoat like real paper */
-    var wm = T.wrapMat;
-    wm.map = wrapTexture(w);
-    if(wc.hex) wm.color.set(wc.hex).lerp(new THREE.Color(0xFFFFFF), .45);
-    else wm.color.set(0xFFFFFF);
-    var fp = { matte:{r:.94,m:0,c:0,e:.45}, satin:{r:.55,m:0,c:.25,e:.8}, glossy:{r:.24,m:0,c:.8,e:1.1}, metallic:{r:.38,m:.8,c:.3,e:1.2}, glitter:{r:.6,m:.05,c:.2,e:.9} }[wf.id] || {r:.9,m:0,c:0,e:.5};
-    wm.roughness = fp.r; wm.metalness = fp.m; wm.clearcoat = fp.c; wm.envMapIntensity = fp.e;
-    wm.needsUpdate = true;
-    if(T.glitterPts) T.glitterPts.visible = wf.glitter > 0;
-    /* bow: a modelled 3D bow tied at the neck — loops, knot and tails —
-       recoloured and re-finished live. "No Bow" shows the wound twine tie. */
-    var hasBow = !!b.img;
-    T.bowGroup.visible = hasBow;
-    T.twineGroup.visible = !hasBow;
-    if(hasBow){
-      var hex = bc.hex || b.color || '#C0392B';
-      var pat = null;
-      if(b.id === 'gingham') pat = bowPattern('gingham', hex);
-      else if(b.id === 'polka') pat = bowPattern('polka', hex);
-      else if(b.id === 'lace') pat = bowPattern('lace', hex);
-      T.bowMats.forEach(function(mt){
-        mt.map = pat;
-        mt.color.set(pat ? 0xFFFFFF : hex);
-        mt.roughness = b.id === 'velvet' ? .95 : (bf.id === 'glossy' ? .2 : .48);
-        mt.clearcoat = bf.id === 'glossy' ? .8 : (b.id === 'satin' ? .45 : .08);
-        mt.transparent = b.id === 'organza';
-        mt.opacity = b.id === 'organza' ? .55 : 1;
-        mt.sheen = b.id === 'velvet' ? .8 : 0;
-        if(mt.sheenColor) mt.sheenColor.set(hex);
-        mt.needsUpdate = true;
-      });
-      if(T.bowGlitter) T.bowGlitter.visible = bf.sparkles;
-    }
-    if(popBow && !REDUCED) T.bowBorn = Date.now();
+  /* wrap: the real paper texture on every sheet and the front cone, the
+     chosen colour tint multiplied over it, and the finish driving the
+     sheen / glitter overlays like real paper */
+  document.querySelectorAll('.wtex').forEach(function(el){
+    el.style.backgroundImage = 'url(' + w.tex + ')';
+    el.style.filter = wf.pat || '';
+  });
+  document.querySelectorAll('.wtint').forEach(function(el){
+    if(wc.hex){ el.style.background = wc.hex; el.style.opacity = '.42'; }
+    else { el.style.background = 'transparent'; el.style.opacity = '0'; }
+  });
+  document.querySelectorAll('.wsheen').forEach(function(el){ el.style.opacity = wf.sheen; });
+  document.querySelectorAll('.wglitter').forEach(function(el){
+    el.style.opacity = wf.glitter;
+    el.style.display = wf.glitter > 0 ? 'block' : 'none';
+  });
+  /* bow: the real bow photo tied at the gathered neck, its knot anchored
+     to the neck point whatever the photo's shape. "No Bow" shows the
+     plain wound twine tie instead. */
+  var bowEl = $('stageBow'), twine = $('twineTie');
+  if(b.img){
+    bowEl.style.display = 'block'; twine.style.display = 'none';
+    if(bowEl.getAttribute('src') !== b.img) bowEl.src = b.img;
+    bowEl.alt = b.name + ' tied at the neck of the bouquet';
+    bowEl.style.width = b.sw + '%';
+    bowEl.style.transform = 'translate(-50%,-' + Math.round(b.ky * 100) + '%)';
+    bowEl.classList.remove('pop');
+    if(popBow && !REDUCED){ void bowEl.offsetWidth; bowEl.classList.add('pop'); }
+  } else {
+    bowEl.style.display = 'none'; twine.style.display = 'block';
   }
   var stems = totalStems();
   $('stage').classList.toggle('has-stems', stems > 0);
-  var sizeName = stems===0?'—':stems<6?'Petite':stems<12?'Classic':stems<20?'Grand':'Luxe';
-  $('sizeLine').innerHTML = '<strong>'+stems+' stem'+(stems===1?'':'s')+'</strong> · '+sizeName+' bouquet · '+wrapLabel()+' wrap · '+bowLabel();
+  var sizeName = stems === 0 ? '—' : stems < 6 ? 'Petite' : stems < 12 ? 'Classic' : stems < 20 ? 'Grand' : 'Luxe';
+  $('sizeLine').innerHTML = '<strong>' + stems + ' stem' + (stems === 1 ? '' : 's') + '</strong> · ' + sizeName + ' bouquet · ' + wrapLabel() + ' wrap · ' + bowLabel();
   $('previewName').textContent = $('bouquetName').value.trim() || 'Untitled';
 }
-
 /* ================= BILL + COUNT-UP ================= */
 var displayedTotal = 0, totalRaf = null;
 function setTotalsText(v){
@@ -839,127 +524,97 @@ $('cardMsg').addEventListener('input', function(){ $('cardCount').textContent = 
 
 /* ================= DRAG & DROP (pointer-based, mouse + touch) ================= */
 var drag = null;
-var _ray = null, _ndc = null;
 function stageRect(){ return $('stage').getBoundingClientRect(); }
-function inRect(x, y, r){ return x>=r.left && x<=r.right && y>=r.top && y<=r.bottom; }
+function inRect(x, y, r){ return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom; }
 function makeGhost(d, x, y){
-  var g=document.createElement('div'); g.className='drag-ghost';
-  if(d.kind==='flower'){
-    g.style.width='78px';
-    g.innerHTML='<img src="'+flowerById(d.id).img+'" alt="">';
-  } else if(d.kind==='wrap'){
-    var w=wrapById(d.id);
-    g.innerHTML='<div class="ghost-chip" style="border-color:'+w.c2+'"><span style="display:inline-block;width:14px;height:14px;border-radius:4px;background:linear-gradient(135deg,'+w.c1+','+w.c2+');vertical-align:-2px;margin-right:7px"></span>'+w.name+'</div>';
+  var g = document.createElement('div'); g.className = 'drag-ghost';
+  if(d.kind === 'flower'){
+    g.style.width = '78px';
+    g.innerHTML = '<img src="' + flowerById(d.id).img + '" alt="">';
+  } else if(d.kind === 'wrap'){
+    var w = wrapById(d.id);
+    g.innerHTML = '<div class="ghost-chip" style="border-color:' + w.c2 + '"><span style="display:inline-block;width:14px;height:14px;border-radius:4px;background:linear-gradient(135deg,' + w.c1 + ',' + w.c2 + ');vertical-align:-2px;margin-right:7px"></span>' + w.name + '</div>';
   } else {
-    var b=bowById(d.id);
-    g.innerHTML='<div class="ghost-chip"><span style="display:inline-block;width:14px;height:14px;border-radius:50%;background:'+(b.color||'#A9855A')+';vertical-align:-2px;margin-right:7px"></span>'+b.name+'</div>';
+    var b = bowById(d.id);
+    g.innerHTML = '<div class="ghost-chip"><span style="display:inline-block;width:14px;height:14px;border-radius:50%;background:' + (b.color || '#A9855A') + ';vertical-align:-2px;margin-right:7px"></span>' + b.name + '</div>';
   }
-  g.style.left=x+'px'; g.style.top=y+'px';
+  g.style.left = x + 'px'; g.style.top = y + 'px';
   document.body.appendChild(g);
   return g;
 }
-function moveGhost(x, y){ if(drag && drag.ghost){ drag.ghost.style.left=x+'px'; drag.ghost.style.top=y+'px'; } }
-function pointerRay(e){
-  var r = stageRect();
-  _ndc.set(((e.clientX-r.left)/r.width)*2-1, -((e.clientY-r.top)/r.height)*2+1);
-  _ray.setFromCamera(_ndc, T.camera);
-  return _ray;
-}
-function pickPiece(e){
-  if(!T.ok || !_ray) return null;
-  pointerRay(e);
-  var hits = _ray.intersectObjects(T.proxies, false);
-  if(!hits.length) return null;
-  var uid = hits[0].object.userData.uid, found = null;
-  pieces.forEach(function(p){ if(p.uid===uid) found = p; });
-  return found;
-}
-/* wherever the pointer is, the drop lands ON the dome — projected onto the
-   dome sphere and clamped to its rim, so a stem can never be placed outside
-   the bouquet area */
+function moveGhost(x, y){ if(drag && drag.ghost){ drag.ghost.style.left = x + 'px'; drag.ghost.style.top = y + 'px'; } }
+/* wherever the pointer is, the drop lands ON the dome — clamped to the
+   dome ellipse, so a stem can never be placed outside the bouquet area */
 function domePointFromPointer(e){
-  if(!T.ok || !_ray) return null;
-  pointerRay(e);
-  var center = new THREE.Vector3(0, 1.3, 0);
-  T.spin.localToWorld(center);
-  var sphere = new THREE.Sphere(center, 1.5);
-  var pt = new THREE.Vector3();
-  if(!_ray.ray.intersectSphere(sphere, pt)){
-    var t = Math.max(0, center.clone().sub(_ray.ray.origin).dot(_ray.ray.direction));
-    pt.copy(_ray.ray.origin).addScaledVector(_ray.ray.direction, t);
-  }
-  var local = T.spin.worldToLocal(pt.clone());
-  var rho = Math.min(1.0, Math.hypot(local.x, local.z));
-  return { rho: Math.max(.05, rho), azim: Math.atan2(local.z, local.x)*180/Math.PI };
+  var r = stageRect();
+  return clampDome((e.clientX - r.left) / r.width * 100, (e.clientY - r.top) / r.height * 100);
 }
 
 document.addEventListener('pointerdown', function(e){
-  if(e.button!==undefined && e.button>0) return;
+  if(e.button !== undefined && e.button > 0) return;
   if(e.target.closest('#pieceX')) return;
   var src = e.target.closest('[data-drag]');
   if(src){
-    drag = { mode:'palette', kind:src.getAttribute('data-drag'), active:false,
+    drag = { mode: 'palette', kind: src.getAttribute('data-drag'), active: false,
       id: src.getAttribute('data-fid') || src.getAttribute('data-wrap') || src.getAttribute('data-bow'),
-      srcEl: src, startX:e.clientX, startY:e.clientY, ghost:null };
+      srcEl: src, startX: e.clientX, startY: e.clientY, ghost: null };
     return;
   }
   if(e.target.closest('#stage')){
-    if(spinning) stopSpin();
-    var p = pickPiece(e);
-    if(p){
-      drag = { mode:'piece', active:false, piece:p, startX:e.clientX, startY:e.clientY };
-      selectPiece(p.uid);
+    var pel = e.target.closest('.piece');
+    if(pel){
+      var uid = +pel.getAttribute('data-uid'), found = null;
+      pieces.forEach(function(p){ if(p.uid === uid) found = p; });
+      if(found){
+        drag = { mode: 'piece', active: false, piece: found, el: pel, startX: e.clientX, startY: e.clientY };
+        selectPiece(found.uid);
+      }
     } else {
-      drag = { mode:'spin', active:false, startX:e.clientX, startY:e.clientY, startAngle:spinAngle, startCamY:T.camY };
       selectPiece(null);
     }
   }
 });
 document.addEventListener('pointermove', function(e){
   if(!drag) return;
-  var dx=e.clientX-drag.startX, dy=e.clientY-drag.startY;
-  if(drag.mode==='spin'){
-    if(!drag.active && Math.hypot(dx,dy) > 6){ drag.active = true; suppressClickUntil = Date.now()+400; }
-    if(drag.active){
-      spinAngle = drag.startAngle + dx*.55;
-      T.camY = clamp(drag.startCamY + dy*.006, -.5, 2.3);
-      renderSpin();
-    }
-    return;
-  }
-  if(drag.mode==='piece'){
-    if(!drag.active && Math.hypot(dx,dy) > 8){
+  var dx = e.clientX - drag.startX, dy = e.clientY - drag.startY;
+  if(drag.mode === 'piece'){
+    if(!drag.active && Math.hypot(dx, dy) > 8){
       drag.active = true;
-      suppressClickUntil = Date.now()+400;
+      suppressClickUntil = Date.now() + 400;
+      drag.el.classList.add('dragging');
+      drag.el.style.zIndex = 90;
       $('trashZone').classList.add('show');
     }
     if(drag.active){
       var dp = domePointFromPointer(e);
-      if(dp){ drag.piece.rho = dp.rho; drag.piece.azim = dp.azim; updatePieceTransform(drag.piece); }
+      drag.piece.x = dp.x; drag.piece.y = dp.y;
+      layoutPiece(drag.piece);
+      positionChip();
       $('trashZone').classList.toggle('hot', inRect(e.clientX, e.clientY, $('trashZone').getBoundingClientRect()));
     }
     return;
   }
   /* palette drag */
-  if(!drag.active && Math.hypot(dx,dy) > 9){
+  if(!drag.active && Math.hypot(dx, dy) > 9){
     drag.active = true;
-    suppressClickUntil = Date.now()+400;
+    suppressClickUntil = Date.now() + 400;
     drag.ghost = makeGhost(drag, e.clientX, e.clientY);
   }
   if(!drag.active) return;
   moveGhost(e.clientX, e.clientY);
   $('stage').classList.toggle('drop-ok', inRect(e.clientX, e.clientY, stageRect()));
-}, {passive:true});
+}, { passive: true });
 function endDrag(e, cancelled){
   if(!drag) return;
   var d = drag; drag = null;
   $('stage').classList.remove('drop-ok');
-  $('trashZone').classList.remove('show','hot');
-  if(d.mode==='spin') return;
-  if(d.mode==='piece'){
+  $('trashZone').classList.remove('show', 'hot');
+  if(d.mode === 'piece'){
+    if(d.el) d.el.classList.remove('dragging');
     if(d.active && !cancelled && inRect(e.clientX, e.clientY, $('trashZone').getBoundingClientRect())){
       removePieceStem(d.piece.uid, d.piece.fid);
     } else if(d.active && !cancelled){
+      renderPieces(null);
       rippleAtPiece(d.piece);
     }
     return;
@@ -968,7 +623,7 @@ function endDrag(e, cancelled){
   if(d.ghost) d.ghost.remove();
   if(!d.active){
     /* tap on a flower photo = add one stem, with a little flight */
-    if(d.kind==='flower' && !cancelled){
+    if(d.kind === 'flower' && !cancelled){
       var img = d.srcEl.querySelector('img');
       addStem(d.id, null, img);
     }
@@ -977,56 +632,23 @@ function endDrag(e, cancelled){
   if(cancelled) return;
   var r = stageRect();
   if(inRect(e.clientX, e.clientY, r)){
-    var px = clamp((e.clientX-r.left)/r.width*100, 6, 94);
-    var py = clamp((e.clientY-r.top)/r.height*100, 2, 96);
-    suppressClickUntil = Date.now()+400;
-    if(d.kind==='flower'){ addStem(d.id, domePointFromPointer(e)); }
-    else if(d.kind==='wrap'){ state.wrap=d.id; renderAll(); renderStageFinish(true); rippleAt(px, 55); }
-    else if(d.kind==='bow'){ state.bow=d.id; renderAll(); renderStageFinish(true); rippleAt(50, 58); }
+    var px = clamp((e.clientX - r.left) / r.width * 100, 6, 94);
+    suppressClickUntil = Date.now() + 400;
+    if(d.kind === 'flower'){ addStem(d.id, domePointFromPointer(e)); }
+    else if(d.kind === 'wrap'){ state.wrap = d.id; renderAll(); renderStageFinish(true); rippleAt(px, 55); }
+    else if(d.kind === 'bow'){ state.bow = d.id; renderAll(); renderStageFinish(true); rippleAt(50, 58); }
   }
 }
 document.addEventListener('pointerup', function(e){ endDrag(e, false); });
 document.addEventListener('pointercancel', function(e){ endDrag(e, true); });
 $('pieceX').addEventListener('click', function(){
-  if(selectedUid==null) return;
+  if(selectedUid == null) return;
   var fid = null;
-  pieces.forEach(function(p){ if(p.uid===selectedUid) fid = p.fid; });
+  pieces.forEach(function(p){ if(p.uid === selectedUid) fid = p.fid; });
   if(fid) removePieceStem(selectedUid, fid);
   selectPiece(null);
-});
-
-
-/* ================= 360° VIEW — true 3D turntable =================
-   The spin angle turns the actual 3D bouquet model (applied every frame in
-   the render loop), so front, side and back all keep the bouquet's real
-   volume — the wrap is a round cone and the heads sit all around the dome. */
-var spinAngle = -24, spinning = false, spinStopAt = Infinity;
-function renderSpin(){
-  var norm = ((spinAngle % 360) + 360) % 360;
-  $('spinRange').value = Math.round(norm);
-  $('spinDeg').textContent = Math.round(norm) + '°';
-}
-function startSpin(){
-  spinning = true;
-  spinStopAt = REDUCED ? spinAngle + 360 : Infinity; /* reduced motion: one user-requested turn, then stop */
-  var btn = $('spinBtn');
-  btn.classList.add('on'); btn.setAttribute('aria-pressed','true'); btn.textContent = '❚❚ Stop spin';
-}
-function stopSpin(){
-  spinning = false;
-  var btn = $('spinBtn');
-  btn.classList.remove('on'); btn.setAttribute('aria-pressed','false'); btn.textContent = '⟳ Spin 360°';
-}
-$('spinBtn').addEventListener('click', function(){ spinning ? stopSpin() : startSpin(); });
-$('spinRange').addEventListener('input', function(){
-  if(spinning) stopSpin();
-  spinAngle = +$('spinRange').value;
-  renderSpin();
-});
-
-
-/* ================= INIT (before entrance animations observe the cards) ================= */
-buildFlowers(); buildOpts(); buildExtras(); buildFinishControls(); init3D(); renderPieces(null); renderAll(); renderSpin();
+});/* ================= INIT (before entrance animations observe the cards) ================= */
+buildFlowers(); buildOpts(); buildExtras(); buildFinishControls(); renderPieces(null); renderAll();
 
 /* ================= HERO PETALS + TITLE + REVEALS ================= */
 (function(){
