@@ -7,3 +7,10 @@ Build your own bouquet, stem by stem: pick your flowers, choose the wrapping pap
 - 12 flowers, multiple wraps and bows with colour & finish options
 - Live itemised bill, delivery slots, UPI / card / cash-on-delivery checkout (demo mode)
 - 360° bouquet spin view
+
+## Project structure
+- `index.html` — page markup
+- `style.css` — all styles
+- `script.js` — bouquet builder logic (flowers, wrap, bow, bill, checkout)
+- `three.min.js` — Three.js library (360°/3D view)
+- `assets/` — flower, wrap and bow photos
