@@ -1,3 +1,4 @@
+
 /* ================= DATA ================= */
 var FLOWERS = [
   {id:'red-rose',   name:'Red Rose',     desc:'Classic romance, deep red petals', price:49,  img:'assets/img-03.png',   pw:27},
@@ -28,12 +29,12 @@ var WRAPS = [
    bow's knot on exactly the same point of the wrap, whatever the photo shape. */
 var BOWS = [
   {id:'none',    name:'No Bow',        desc:'Clean, minimal twine tie',    price:0,   color:null,      img:null,                   sw:0,  ky:0,    ar:1},
-  {id:'satin',   name:'Satin Ribbon',  desc:'Classic glossy bow',          price:39,  color:'#C0392B', img:'assets/img-02.png',   sw:40, ky:.47,  ar:.75},
-  {id:'organza', name:'Sheer Organza', desc:'Light, floaty & soft',        price:49,  color:'#F2A9BC', img:'assets/img-23.png', sw:32, ky:.28,  ar:1},
-  {id:'velvet',  name:'Velvet Bow',    desc:'Rich, plush & festive',       price:79,  color:'#5E2750', img:'assets/img-24.png',  sw:25, ky:.105, ar:1.51},
-  {id:'gingham', name:'Gingham Bow',   desc:'Red-and-white picnic check',  price:59,  color:'#C23B3B', img:'assets/img-25.png', sw:34, ky:.38,  ar:.60},
-  {id:'lace',    name:'Lace Bow',      desc:'Ivory lace, vintage romance', price:89,  color:'#E9DFC8', img:'assets/img-26.png',    sw:30, ky:.30,  ar:1.20},
-  {id:'polka',   name:'Polka Dot Bow', desc:'Playful black grosgrain dots',price:49,  color:'#2B2B2E', img:'assets/img-27.png',   sw:33, ky:.20,  ar:.58}
+  {id:'satin',   name:'Satin Ribbon',  desc:'Classic glossy bow',          price:39,  color:'#C0392B', img:'assets/img-02.png',   sw:27, ky:.47,  ar:.75},
+  {id:'organza', name:'Sheer Organza', desc:'Light, floaty & soft',        price:49,  color:'#F2A9BC', img:'assets/img-23.png', sw:22, ky:.28,  ar:1},
+  {id:'velvet',  name:'Velvet Bow',    desc:'Rich, plush & festive',       price:79,  color:'#5E2750', img:'assets/img-24.png',  sw:18, ky:.105, ar:1.51},
+  {id:'gingham', name:'Gingham Bow',   desc:'Red-and-white picnic check',  price:59,  color:'#C23B3B', img:'assets/img-25.png', sw:23, ky:.38,  ar:.60},
+  {id:'lace',    name:'Lace Bow',      desc:'Ivory lace, vintage romance', price:89,  color:'#E9DFC8', img:'assets/img-26.png',    sw:21, ky:.30,  ar:1.20},
+  {id:'polka',   name:'Polka Dot Bow', desc:'Playful black grosgrain dots',price:49,  color:'#2B2B2E', img:'assets/img-27.png',   sw:23, ky:.20,  ar:.58}
 ];
 var EXTRAS = [
   {id:'card',  name:'Handwritten greeting card', desc:'Your words, written by hand on a kraft card', price:49},
