@@ -46,8 +46,8 @@ Velora is a **drag-and-drop bouquet builder** I made because fixed, ready-made b
 No build step, no dependencies — it's a static site.
 
 ```
-git clone https://github.com/NidhiSaini27/Velora---Flowers-Bouquets.git
-cd Velora---Flowers-Bouquets
+git clone https://github.com/NidhiSaini27/velora-flower-bouquet.git
+cd velora-flower-bouquet
 ```
 
 Then open `index.html` in your browser — or serve it with any static server, e.g. `npx serve .`
