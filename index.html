@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Velora — Bouquet Builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-in">
+    <div class="brand">
+      <svg class="bmark" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c-4-3.6-6-6.8-6-10.4C6 6.9 8.6 4 12 2c3.4 2 6 4.9 6 8.6 0 3.6-2 6.8-6 10.4z" fill="var(--accent)" opacity=".9"/><circle cx="12" cy="10.5" r="2.6" fill="var(--gold)"/></svg>
+      Velora<span>.</span>
+    </div>
+    <nav class="main-nav" aria-label="Bouquet builder steps">
+      <a href="#step-flowers">Flowers</a>
+      <a href="#step-wrap">Wrap</a>
+      <a href="#step-bow">Bow</a>
+      <a href="#step-extras">Extras</a>
+    </nav>
+    <div class="hdr-chip">Your bouquet <span class="amt count-total">₹0</span> <button type="button" class="go" id="hdrGo">Arrange</button></div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="petals" id="petals" aria-hidden="true"></div>
+    <h1 id="heroTitle">Build your own <em>bouquet</em>, stem by stem</h1>
+    <p>A hands-on studio with real photos: <strong>drag flowers straight into your bouquet</strong> and arrange every stem yourself on the dome, then pick the wrap and bow and watch the bill add up live.</p>
+    <div class="perks">
+      <div class="perk"><span class="dot"></span> Cut fresh every morning</div>
+      <div class="perk"><span class="dot"></span> Free delivery over ₹999</div>
+      <div class="perk"><span class="dot"></span> Handwritten card available</div>
+      <div class="perk"><span class="dot"></span> Pay by UPI, card or cash</div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="builder-col">
+
+      <!-- STEP 1 : FLOWERS -->
+      <section class="step reveal" id="step-flowers">
+        <div class="step-head"><span class="step-num">01</span><h2>Pick your flowers</h2></div>
+        <p class="step-sub"><strong>Drag a flower photo into the bouquet</strong> on the right (or tap it / use +). Arrange stems by dragging them around the studio. Minimum 3 stems to check out.</p>
+        <div class="presets">
+          <button type="button" class="preset-btn" data-preset="romantic">♥ Romantic Reds</button>
+          <button type="button" class="preset-btn" data-preset="sunny">☀ Sunny Day</button>
+          <button type="button" class="preset-btn" data-preset="pastel">❀ Pastel Dream</button>
+          <button type="button" class="preset-btn" data-preset="clear">Clear all</button>
+        </div>
+        <div class="flower-grid" id="flowerGrid"></div>
+      </section>
+
+      <!-- STEP 2 : WRAP -->
+      <section class="step reveal" id="step-wrap">
+        <div class="step-head"><span class="step-num">02</span><h2>Choose the wrapping paper</h2></div>
+        <p class="step-sub">Tap a paper, or <strong>drag it onto the bouquet</strong> to wrap it. One full sheet folded around the stems the way a florist wraps it, with a waterproof inner lining so stems stay fresh till delivery. Then <strong>tint it any colour</strong> and pick a finish below — the bouquet updates live.</p>
+        <div class="opt-grid" id="wrapGrid"></div>
+        <p class="opt-label">Paper colour <span class="sel-name" id="wrapColorName">As shown</span> <span class="opt-note">— tints whichever paper you picked</span></p>
+        <div class="swatches" id="wrapColors"></div>
+        <p class="opt-label">Paper finish <span class="sel-name" id="wrapFinishName">Matte</span> <span class="opt-note">— included, no extra charge</span></p>
+        <div class="finishes" id="wrapFinishes"></div>
+      </section>
+
+      <!-- STEP 3 : BOW -->
+      <section class="step reveal" id="step-bow">
+        <div class="step-head"><span class="step-num">03</span><h2>Pick the bow &amp; finish</h2></div>
+        <p class="step-sub">Tied by hand at the neck of the bouquet. Tap one, or <strong>drag it onto the bouquet</strong> to tie it on. You can also <strong>recolour the ribbon</strong> and add a glossy or glitter finish below.</p>
+        <div class="opt-grid" id="bowGrid"></div>
+        <p class="opt-label">Ribbon colour <span class="sel-name" id="bowColorName">As shown</span> <span class="opt-note">— recolours the ribbon you picked</span></p>
+        <div class="swatches" id="bowColors"></div>
+        <p class="opt-label">Ribbon finish <span class="sel-name" id="bowFinishName">Classic</span> <span class="opt-note">— included, no extra charge</span></p>
+        <div class="finishes" id="bowFinishes"></div>
+      </section>
+
+      <!-- STEP 4 : EXTRAS -->
+      <section class="step reveal" id="step-extras">
+        <div class="step-head"><span class="step-num">04</span><h2>Add a little extra</h2></div>
+        <p class="step-sub">Optional — but the card is where most people say the thing that matters.</p>
+        <div id="extrasList"></div>
+        <div class="field" id="cardMsgField" style="display:none">
+          <label for="cardMsg">Your handwritten message</label>
+          <textarea id="cardMsg" maxlength="160" placeholder="e.g. Happy birthday, Aanya! These reminded me of you. — R"></textarea>
+          <div class="char-count"><span id="cardCount">0</span>/160</div>
+        </div>
+        <div class="field">
+          <label for="bouquetName">Name your bouquet (shown on the card sleeve)</label>
+          <input id="bouquetName" type="text" maxlength="30" placeholder="e.g. For Maa, With Love" />
+        </div>
+      </section>
+    </div>
+
+    <!-- SIDE : STUDIO + BILL -->
+    <aside class="side">
+      <div class="studio-card reveal" id="studioCard">
+        <h2>Your bouquet — <span class="bname" id="previewName">Untitled</span></h2>
+        <div class="stage" id="stage" aria-label="Bouquet arranging studio. Drag flowers here and move them around to arrange your bouquet.">
+          <div class="bq" id="bqGroup" aria-hidden="true">
+            <div id="piecesLayer"></div>
+            <div class="wrap-front"><div class="wtex"></div><div class="wtint"></div><div class="wfold"></div><div class="wsheen"></div><div class="wglitter"></div></div>
+            <div class="twine-tie" id="twineTie" style="display:none"></div>
+            <img class="stage-bow" id="stageBow" src="assets/img-21.png" alt="">
+          </div>
+          <svg class="empty-silhouette" viewBox="0 0 200 250" fill="none" aria-hidden="true"><path d="M42 62a58 34 0 0 1 116 0" stroke="currentColor" stroke-width="2" stroke-dasharray="6 6" stroke-linecap="round"/><path d="M40 94h120l-26 56-7 20 1 72H72l1-72-7-20z" stroke="currentColor" stroke-width="2" stroke-dasharray="6 6" stroke-linejoin="round"/></svg>
+          <div class="stage-empty" id="stageEmpty">
+            <span class="big">✿</span>
+            <p>Your bouquet is empty.<br>Drag flowers in here — or tap + in Step 01 — and arrange them your way.</p>
+          </div>
+          <div class="trash-zone" id="trashZone">Drop here to remove this stem</div>
+          <button type="button" class="piece-x-chip" id="pieceX" aria-label="Remove the selected stem">×</button>
+        </div>
+        <p class="size-line" id="sizeLine"><strong>0 stems</strong> · pick flowers to begin</p>
+        <div class="studio-tools">
+          <button type="button" class="tool-btn" id="autoArrange">↺ Auto-arrange</button>
+          <button type="button" class="tool-btn" id="clearBtn">Clear bouquet</button>
+        </div>
+        <p class="studio-hint">Drag stems over the dome to arrange them — they always stay inside the bouquet, with every stem tucked into the wrap · tap a stem then its ×, or drag it to the bin, to remove it</p>
+      </div>
+
+      <div class="bill reveal" id="billCard">
+        <h2>Bill summary</h2>
+        <div class="bill-lines" id="billLines"></div>
+        <div class="progress-wrap" id="shipProgress">
+          <div class="progress-track"><div class="progress-fill" id="shipFill" style="width:0%"></div></div>
+          <div class="progress-note" id="shipNote"></div>
+        </div>
+        <hr>
+        <div class="bill-total"><span>Total to pay</span><span class="amt count-total" id="billTotal">₹0</span></div>
+        <button type="button" class="checkout-btn" id="checkoutBtn" disabled>Proceed to checkout</button>
+        <p class="checkout-hint" id="checkoutHint">Add at least 3 stems to check out.</p>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-in">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Velora<span>.</span></div>
+        <p>Hand-tied bouquets built by you, stem by stem, and finished by our florists in Delhi. Every stem is cut fresh the morning your bouquet is made.</p>
+      </div>
+      <div>
+        <h3>Build yours</h3>
+        <ul>
+          <li><a href="#step-flowers">Pick your flowers</a></li>
+          <li><a href="#step-wrap">Wrapping papers</a></li>
+          <li><a href="#step-bow">Bows &amp; finishes</a></li>
+          <li><a href="#step-extras">Cards &amp; extras</a></li>
+          <li><a href="#studioCard">The arranging studio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Good to know</h3>
+        <ul>
+          <li>Same-day delivery across Delhi NCR, order by 9 PM</li>
+          <li>Free delivery on orders over ₹999 (otherwise ₹79)</li>
+          <li>Pay by UPI, card, or cash on delivery</li>
+          <li>All prices include GST</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Velora Flowers · Hand-tied in Delhi</span>
+      <span>Stems are market-fresh, so exact shades may vary slightly from the photos.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- mobile sticky bar -->
+<div class="mobile-bar" id="mobileBar">
+  <div><div class="mt" id="mobileStems">0 stems</div><div class="mv count-total" id="mobileTotal">₹0</div></div>
+  <button type="button" id="mobileCheckout" disabled>Checkout</button>
+</div>
+
+<!-- CHECKOUT -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Checkout">
+  <div class="sheet">
+    <div id="checkoutView">
+      <button type="button" class="close-x" id="closeCheckout" aria-label="Close checkout">✕</button>
+      <h2>Checkout</h2>
+      <p class="sheet-sub">Delivery details first, then payment. Your bouquet is made only after the order is placed.</p>
+
+      <h3 class="sec">Where is it going?</h3>
+      <div class="grid2">
+        <div class="field" id="f-name"><label for="inName">Your name</label><input id="inName" type="text" autocomplete="name" placeholder="Full name"><div class="err">Please enter your name.</div></div>
+        <div class="field" id="f-phone"><label for="inPhone">Phone (WhatsApp)</label><input id="inPhone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile number"><div class="err">Enter a valid 10-digit mobile number.</div></div>
+      </div>
+      <div class="field" id="f-address" style="margin-top:12px"><label for="inAddress">Delivery address</label><textarea id="inAddress" placeholder="House / flat, street, area, landmark"></textarea><div class="err">Please enter the delivery address.</div></div>
+      <div class="grid2" style="margin-top:12px">
+        <div class="field" id="f-date"><label for="inDate">Delivery date</label><input id="inDate" type="date"><div class="err">Pick a date — today or later.</div></div>
+        <div class="field"><label for="inSlot">Delivery slot</label>
+          <select id="inSlot">
+            <option>9 AM – 12 PM</option><option>12 PM – 3 PM</option>
+            <option selected>3 PM – 6 PM</option><option>6 PM – 9 PM</option>
+          </select>
+        </div>
+      </div>
+
+      <h3 class="sec">Order summary</h3>
+      <div class="order-mini" id="orderMini"></div>
+
+      <h3 class="sec">How would you like to pay?</h3>
+      <div class="pay-tabs" role="tablist">
+        <button type="button" class="pay-tab sel" data-pay="upi">UPI</button>
+        <button type="button" class="pay-tab" data-pay="card">Card</button>
+        <button type="button" class="pay-tab" data-pay="cod">Cash on delivery</button>
+      </div>
+
+      <div class="pay-panel on" id="pay-upi">
+        <div class="field" id="f-upi"><label for="inUpi">Your UPI ID</label><input id="inUpi" type="text" inputmode="email" placeholder="yourname@okhdfcbank / @paytm / @ybl"><div class="err">That UPI ID doesn't look right — it should look like name@bank.</div></div>
+        <p class="secure-note">You'll get a collect request on your UPI app to approve the payment.</p>
+      </div>
+
+      <div class="pay-panel" id="pay-card">
+        <div class="field" id="f-cardnum"><label for="inCardNum">Card number</label><input id="inCardNum" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456" maxlength="19"><div class="err">Enter the 16-digit card number.</div></div>
+        <div class="grid2" style="margin-top:12px">
+          <div class="field" id="f-exp"><label for="inExp">Expiry (MM/YY)</label><input id="inExp" type="text" inputmode="numeric" placeholder="MM/YY" maxlength="5"><div class="err">Enter a valid future expiry.</div></div>
+          <div class="field" id="f-cvv"><label for="inCvv">CVV</label><input id="inCvv" type="password" inputmode="numeric" placeholder="•••" maxlength="3"><div class="err">Enter the 3-digit CVV.</div></div>
+        </div>
+        <div class="field" style="margin-top:12px"><label for="inCardName">Name on card</label><input id="inCardName" type="text" placeholder="As printed on the card"></div>
+      </div>
+
+      <div class="pay-panel" id="pay-cod">
+        <p style="margin:0;color:var(--muted);font-size:14.5px">Pay in cash or by UPI when your bouquet arrives. Please keep the total ready — our rider carries a QR code too.</p>
+      </div>
+
+      <button type="button" class="pay-btn" id="payBtn">Pay ₹0</button>
+      <p class="secure-note">Demo checkout for the Velora storefront — the full payment flow works end-to-end here, and no real money is charged. Connect a payment gateway (Razorpay / Stripe) with your keys to take live payments.</p>
+    </div>
+
+    <div class="success-view" id="successView">
+      <div class="success-tick">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5" stroke="var(--green)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h2>Order placed!</h2>
+      <p class="oid" id="successOrderId"></p>
+      <p id="successLine"></p>
+      <div class="success-box" id="successBox"></div>
+      <div class="btn-row">
+        <button type="button" class="btn-ghost" id="receiptBtn">Download receipt</button>
+        <button type="button" class="btn-primary" id="againBtn">Build another bouquet</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
