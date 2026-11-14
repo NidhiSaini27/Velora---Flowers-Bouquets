@@ -39,7 +39,7 @@ Velora is a **drag-and-drop bouquet builder** I made because fixed, ready-made b
 
 ## 🚀 Live demo
 
-**[▶ Try Velora live](https://velora-sigma-lemon.vercel.app)** — no sign-up, just start building.
+**[▶ Try Velora live](https://velora-flower-bouquet.vercel.app)** — no sign-up, just start building.
 
 ## 💻 Run it locally
 
@@ -57,14 +57,6 @@ Then open `index.html` in your browser — or serve it with any static server, e
 - Real payments via Razorpay (UPI + cards)
 - Occasion collections — birthdays, anniversaries, weddings
 - Same-day delivery slots with live tracking
-
-## 👩‍💻 Who made this
-
-**Nidhi Saini** — that's me. BCA student @ DSEU, full-stack developer & hackathon enthusiast. Velora is my project — designed and built by me, one late-night iteration at a time.
-
-[![GitHub](https://img.shields.io/badge/GitHub-NidhiSaini27-181717?style=flat&logo=github)](https://github.com/NidhiSaini27) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Nidhi%20Saini-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/nidhi-saini-36952a324/)
-
-**Ravi Chandel** — my teammate and the other half of this build. He tests every version I push, tells me honestly when a bouquet looks off, and has strong opinions about ribbon colours. Velora is better because he keeps arguing with me about the details.
 
 ---
 
