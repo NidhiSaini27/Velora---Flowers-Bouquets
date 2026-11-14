@@ -10,7 +10,7 @@
 
 ## 📸 The project
 
-Velora is a **drag-and-drop bouquet builder**. No fixed bouquets, no boring catalogue — you arrange every stem yourself, pick the wrapping paper and bow, and the price builds up live as you create.
+Velora is a **drag-and-drop bouquet builder** I made because fixed, ready-made bouquets are boring. Here you arrange every stem yourself, pick the wrapping paper and the bow, and the price builds up live while you create.
 
 | ![Velora bouquet builder — picking flowers and wraps](pics/site-builder.png) | ![Velora bouquet builder — choosing the bow and ribbon colour](pics/site-bow.png) |
 | --- | --- |
@@ -25,7 +25,7 @@ Velora is a **drag-and-drop bouquet builder**. No fixed bouquets, no boring cata
 - 🍫 **Extras** — handwritten card with your message, chocolates, a teddy, or a candle
 - ⚡ **One-tap presets** — Romantic Reds, Sunny Day & more, ready to customise
 - 🧾 **Live itemised bill** — flowers + wrap + bow + extras + delivery (free above ₹999), updating as you build
-- 💳 **Full checkout** — delivery details, date & time slot, pay by UPI, card or cash on delivery, with an order confirmation and downloadable receipt *(demo mode — connect Razorpay/Stripe to take real payments)*
+- 💳 **Full checkout** — delivery details, date & time slot, pay by UPI, card or cash on delivery, with an order confirmation and downloadable receipt *(demo mode for now — real payments are on the v2 list)*
 
 ## 🗂️ Project structure
 
@@ -34,12 +34,12 @@ Velora is a **drag-and-drop bouquet builder**. No fixed bouquets, no boring cata
 | `index.html` | Page markup |
 | `style.css` | All styles & animations |
 | `script.js` | Bouquet builder logic — flowers, wrap, bow, bill, checkout |
-| `assets/` | Flower, wrap & bow photos (img-01 … img-27) |
+| `assets/` | Flower, wrap & bow photos (img-01 … img-26) |
 | `pics/` | README photos & screenshots |
 
 ## 🚀 Live demo
 
-**[velora-sigma-lemon.vercel.app](https://velora-sigma-lemon.vercel.app)**
+**[▶ Try Velora live](https://velora-sigma-lemon.vercel.app)** — no sign-up, just start building.
 
 ## 💻 Run it locally
 
@@ -58,13 +58,13 @@ Then open `index.html` in your browser — or serve it with any static server, e
 - Occasion collections — birthdays, anniversaries, weddings
 - Same-day delivery slots with live tracking
 
-## 👩‍💻 Team
+## 👩‍💻 Who made this
 
-**Nidhi Saini** — creator · BCA student @ DSEU, full-stack developer & hackathon enthusiast
+**Nidhi Saini** — that's me. BCA student @ DSEU, full-stack developer & hackathon enthusiast. Velora is my project — designed and built by me, one late-night iteration at a time.
 
 [![GitHub](https://img.shields.io/badge/GitHub-NidhiSaini27-181717?style=flat&logo=github)](https://github.com/NidhiSaini27) [![LinkedIn](https://img.shields.io/badge/LinkedIn-Nidhi%20Saini-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/nidhi-saini-36952a324/)
 
-**Ravi Chandel** — collaborator
+**Ravi Chandel** — my teammate and the other half of this build. He tests every version I push, tells me honestly when a bouquet looks off, and has strong opinions about ribbon colours. Velora is better because he keeps arguing with me about the details.
 
 ---
 
